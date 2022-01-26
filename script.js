@@ -1,11 +1,22 @@
-const menu = document.querySelectors('.menu')
+
+const navigation = document.querySelector('.navigation');
+const menu = document.querySelector('.menu');
+const body = document.querySelector('body');
+const hero = document.querySelector('.hero');
+const close = document.querySelector('.close')
 
 
 // => Fat arrow
 // -> skiinny arrow
 
 const listenToMenuButton = () => {
-    console.log("I was clicked");
+    hero.style.left = "220px";
+    body.classList.add('show');
+}
+const RemoveMenu = () => {
+    hero.style.left = "0";
+    body.classList.remove('show');
 }
 
-menu.addEventListener
+menu.addEventListener('click',listenToMenuButton);
+close.addEventListener('click',RemoveMenu);
