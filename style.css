@@ -1,0 +1,31 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    background-color: black;
+    width: 220px;
+    height: 100vh;
+    padding: 20px;
+    position: absolute;
+}
+
+.nav-items{
+    list-style: none;
+    padding: 0;
+
+}
+
+.menu{
+    position: relative;
+}
+
+.hero{
+    background-image: linear-gradient() url(./images/bg.jpg);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
