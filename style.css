@@ -75,6 +75,42 @@
     color: white;
     transition: all .5s ease-in-out;
 }
-.hero h1{
+h1{
     margin: 10px 0;
+}
+p{
+    font-size: 22px;
+    width: 50%;
+}
+.profile-img{
+    width: 270px;
+    height: 290px;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+.about{
+    background-image: url(./images/alone.jpg);
+    color: green;
+}
+.services{
+    background-image: url(./images/heli.jpg);
+    color: mistyrose;
+}
+.portfolio{
+    background-image: url(./images/sky-view.jpg);
+    color: mediumspringgreen;
+}
+.blog{
+    background-image: url(./images/beautiful-place.jpg);
+    color: floralwhite;
+}
+.menu-page{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

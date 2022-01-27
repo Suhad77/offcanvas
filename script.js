@@ -5,10 +5,6 @@ const body = document.querySelector('body');
 const hero = document.querySelector('.hero');
 const close = document.querySelector('.close')
 
-
-// => Fat arrow
-// -> skiinny arrow
-
 const listenToMenuButton = () => {
     hero.style.left = "220px";
     body.classList.add('show');
@@ -20,3 +16,23 @@ const RemoveMenu = () => {
 
 menu.addEventListener('click',listenToMenuButton);
 close.addEventListener('click',RemoveMenu);
+
+const navItems = [...document.querySelectorAll('.nav-items li a')]
+
+navItems.map(element => {
+    element.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const id = e.target.getAttribute('href');
+        console.log(id);
+        const section =document.querySelector(id).offsetTop;
+        console.log(section);
+
+
+        // window.scroll({
+        //     top:0,
+        //     left:0,
+        //     behavior: 'smooth',
+        // })
+    });
+});
