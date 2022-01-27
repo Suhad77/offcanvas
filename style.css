@@ -75,6 +75,9 @@
     color: white;
     transition: all .5s ease-in-out;
 }
+.hero p{
+    width: 100%;
+}
 h1{
     margin: 10px 0;
 }
